@@ -1,0 +1,28 @@
+{
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com",
+      "geosite:category-ads-all": "127.0.0.1"
+    },
+    "servers": [
+      {
+        "address": "tls://dns.google",
+        "concurrency": true,
+        "skipFallback": false
+      },
+      {
+        "address": "tls+local://1.12.12.12",
+        "concurrency": true,
+        "domains": [
+          "domain:one.one.one.one",
+          "full:dns.google"
+        ],
+        "skipFallback": true
+      }
+    ],
+    "tag": "dns",
+    "queryStrategy": "UseIPv4",
+    "disableFallback": false,
+    "disableFallbackIfMatch": true
+  }
+}

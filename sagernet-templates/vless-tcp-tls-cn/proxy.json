@@ -1,0 +1,44 @@
+{
+  "outbounds": [
+      {
+          "tag": "proxy",
+          "protocol": "VLESS",
+          "settings": {
+              "packetEncoding": "none",
+              "vnext": [
+                  {
+                      "address": "1.1.1.1",
+                      "port": 443,
+                      "users": [
+                          {
+                              "id": "00000000-0000-0000-0000-000000000000",
+                              "alterId": 0,
+                              "security": "none",
+                              "level": 0
+                          }
+                      ]
+                  }
+              ],
+              "servers": null,
+              "response": null
+          },
+          "streamSettings": {
+              "network": "tcp",
+              "security": "tls",
+              "tlsSettings": {
+                  "allowInsecure": false,
+                  "serverName": "one.one.one.one"
+              },
+              "tcpSettings": null,
+              "sockopt": {
+                  "domainStrategy": "UseIPv4"
+              }
+          },
+          "mux": {
+              "concurrency": -1,
+              "packetEncoding": "none",
+              "enabled": false
+          }
+      }
+  ]
+}
