@@ -16,7 +16,7 @@
         ]
       },
       {
-        "domain": [
+        "domains": [
           "domain:appcenter.ms",
           "domain:app-measurement.com",
           "domain:firebase.io",
@@ -28,7 +28,7 @@
         "type": "field"
       },
       {
-        "domain": [
+        "domains": [
           "domain:googleapis.cn",
           "geosite:geolocation-!cn"
         ],
@@ -44,7 +44,7 @@
         "type": "field"
       },
       {
-        "domain": [
+        "domains": [
           "geosite:cn",
           "geosite:private"
         ],
