@@ -1,0 +1,22 @@
+{
+  "routing": {
+    "balancers": [
+      {
+        "tag": "proxy",
+        "selector": [
+          "proxy-"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        }
+      }
+    ]
+  },
+  "observatory": {
+    "subjectSelector": [
+      "proxy-"
+    ],
+    "probeURL": "https://www.google.com/generate_204",
+    "probeInterval": "3m"
+  }
+}
