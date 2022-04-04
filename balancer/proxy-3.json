@@ -1,0 +1,49 @@
+{
+    "outbounds": [
+        {
+            "tag": "proxy-3",
+            "protocol": "VLESS",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "1.1.1.1",
+                        "port": 443,
+                        "users": [
+                            {
+                                "id": "00000000-0000-0000-0000-000000000000",
+                                "email": "t@t.tt",
+                                "security": "none",
+                                "encryption": "none",
+                            }
+                        ]
+                    }
+                ],
+                "servers": null,
+                "response": null
+            },
+            "streamSettings": {
+                "network": "grpc",
+                "grpcSettings": {
+                    "serviceName": "rpc",
+                    "health_check_timeout": 20,
+                    "multiMode": false,
+                    "initial_windows_size": 0,
+                    "idle_timeout": 10
+                },
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": false,
+                    "serverName": "one.one.one.one"
+                },
+                "tcpSettings": null,
+                "sockopt": {
+                    "domainStrategy": "UseIPv4"
+                }
+            },
+            "mux": {
+                "concurrency": -1,
+                "enabled": false
+            }
+        }
+    ]
+}
